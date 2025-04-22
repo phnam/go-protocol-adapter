@@ -205,7 +205,7 @@ func (server *HTTPAPIServer) ExposeSSL(port int) {
 // exited due to an error or normal shutdown.
 func (server *HTTPAPIServer) Start(wg *sync.WaitGroup) {
 	var ps = strconv.Itoa(server.Port)
-	fmt.Println("  [ API Server " + strconv.Itoa(server.ID) + " ] Try to listen at " + ps)
+	fmt.Println("  [ HTTP Server " + strconv.Itoa(server.ID) + " ] Try to listen at " + ps)
 	server.Echo.HideBanner = true
 
 	// Start HTTPS server in a separate goroutine if SSL is enabled
