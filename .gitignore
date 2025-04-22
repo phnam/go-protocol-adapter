@@ -1,0 +1,6 @@
+debug
+.vscode/
+.idea/*
+go-sdk.exe
+test/
+vendor/
